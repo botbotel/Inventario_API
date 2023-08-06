@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap');
+
+body {
+    background-color: #588157;
+    color: #DAD7CD;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+}
+
+.seccionPedidos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: -70%;
+    margin-top: 6%;
+}
+
+.tablaPedidos {
+    background-color: #3A5A40;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+.tablaPedidos tr{
+    text-align: center;
+}
+
+.tablaPedidos th {
+    padding: 10px;
+}
+
+.modificarPedido {
+    display: flex;
+    flex-direction: column;
+    margin-left: 4.8%;
+    margin-top: 8px;
+}
+
+.textAreas {
+    border-radius: 8px;
+    border: none;
+}
+
+.textAreas textarea {
+    text-align: center;
+    resize: none;
+}
+
+.botoneraPedidos {
+    margin-left: 0%;
+}
+
+.botoneraPedidos button{
+    border: none;
+    padding: 8px;
+    margin: 1rem;
+    background-color: #DAD7CD;
+    color: #344E41;
+}

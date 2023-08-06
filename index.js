@@ -32,6 +32,24 @@ app.get('/api/fechas_pedidos', (req, res) => {
     });
 });
 
+app.get('/api/fechas_pedidos/:id_producto', (req, res) => {
+    const idProducto = req.params.id_producto;
+
+    connection.query('SELECT * FROM fecha_pedido WHERE id_producto = ?', [idProducto], (err, results) => {
+        if (err) {
+            res.status(500).json({ error: err.message });
+            return;
+        }
+
+        if (results.length === 0) {
+            res.status(404).json({ message: 'Producto no encontrado' });
+            return;
+        }
+
+        res.json(results[0]);
+    });
+});
+
 
 app.post('/api/fechas_pedidos', (req, res) => {
     const { id_producto, nombre_producto, cantidad_producto, fecha_pedido } = req.body;

@@ -1,24 +1,44 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
     <title>Prueba API</title>
-</head>
-<body onload="mostrarDatos()">
-    <h1>Pedido</h1>
-    <table>
-        <thead>
-            <tr>
+  </head>
+  <body onload="mostrarDatos()">
+    <div class="seccionPedidos">
+        <h1>PEDIDO</h1>
+      <div class="tablaPedidos">
+        <table>
+            <thead>
+              <tr>
                 <th>ID</th>
                 <th>Producto</th>
                 <th>Cantidad</th>
                 <th>Fecha</th>
-            </tr>
-        </thead>
-        <tbody id="cuerpoTabla">
-        </tbody>
-    </table>
-</body>
-<script src="./script.js"></script>
+              </tr>
+            </thead>
+            <tbody id="cuerpoTabla"></tbody>
+          </table>
+      </div>
+    </div>
+    <div class="modificarPedido">
+        <div class="textAreas">
+            <textarea name="id_articulo" id="id_articulo" cols="5" rows="2" placeholder="ID"></textarea>
+            <textarea name="nombre_articulo" id="nombre_articulo" cols="12" rows="2" placeholder="Nombre del producto"></textarea>
+            <textarea name="cantidad_articulo" id="cantidad_articulo" cols="12" rows="2" placeholder="Cantidad del producto"></textarea>
+            <input type="date" id="fecha_delPedido">
+            <button onclick="limpiarDatos()">Limpiar</button>
+        </div>
+        <div class="botoneraPedidos">
+            <button onclick="buscarArticulo()">Buscar</button>
+            <button onclick="agregarArticulo()">Agregar</button>
+            <button onclick="modificarArticulo()">Modificar</button>
+            <button onclick="borrarArticulo()">Eliminar</button>
+
+        </div>
+    </div>
+  </body>
+  <script src="./script.js"></script>
 </html>
