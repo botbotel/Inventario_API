@@ -7,6 +7,12 @@ body {
     font-weight: 300;
 }
 
+.cabezado {
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+}
+
 .seccionPedidos {
     display: flex;
     flex-direction: column;
@@ -39,13 +45,37 @@ body {
 }
 
 .textAreas {
-    border-radius: 8px;
-    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;    
+}
+
+.textAreas p {
+    display: flex;
+}
+
+.textAreas p textarea{
+    margin-left: 10px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.textAreas p input{
+    margin-left: 10px;
+    font-family: 'Oswald', sans-serif;
 }
 
 .textAreas textarea {
     text-align: center;
     resize: none;
+}
+
+.botonClear button {
+    border: none;
+    padding: 8px;
+    margin: 1rem;
+    background-color: #DAD7CD;
+    color: #344E41;
 }
 
 .botoneraPedidos {
@@ -59,3 +89,27 @@ body {
     background-color: #DAD7CD;
     color: #344E41;
 }
+
+.botoneraPedidos button:hover {
+    transition: 0.7s;
+    background-color: #344E41;
+    color: #DAD7CD;
+}
+
+.toggle {
+    display: none;
+}
+
+.toggleActivoError {
+    transition: 2s ease-in;
+    background-color: rgb(237, 39, 39);
+    display: flex;
+    position: relative;
+    margin-top: 20%;
+    margin-left: 85%;
+    width: 15%;
+    justify-content: center;
+    border-radius: 10px;
+    
+}
+

@@ -1,0 +1,34 @@
+body {
+    background-color: #588157;
+    color: #DAD7CD;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: #3A5A40;
+    width: 50%;
+    align-items: center;
+    margin-left: 20%;
+    margin-top: 20%;
+    padding: 5%;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form input {
+    margin: 5px;
+}
+
+.form button {
+    border: none;
+    background-color: #DAD7CD;
+    color: #588157;
+    margin-top: 10px;
+}

@@ -7,6 +7,9 @@
     <title>Prueba API</title>
   </head>
   <body onload="mostrarDatos()">
+    <div class="cabezado">
+      <h1>INVENTARIO BARRA</h1>
+    </div>
     <div class="seccionPedidos">
         <h1>PEDIDO</h1>
       <div class="tablaPedidos">
@@ -25,18 +28,17 @@
     </div>
     <div class="modificarPedido">
         <div class="textAreas">
-            <textarea name="id_articulo" id="id_articulo" cols="5" rows="2" placeholder="ID"></textarea>
-            <textarea name="nombre_articulo" id="nombre_articulo" cols="12" rows="2" placeholder="Nombre del producto"></textarea>
-            <textarea name="cantidad_articulo" id="cantidad_articulo" cols="12" rows="2" placeholder="Cantidad del producto"></textarea>
-            <input type="date" id="fecha_delPedido">
-            <button onclick="limpiarDatos()">Limpiar</button>
+            <p>ID: <textarea name="id_articulo" id="id_articulo" cols="5" rows="1"></textarea></p>
+            <p>NOMBRE DEL PRODUCTO: <textarea name="nombre_articulo" id="nombre_articulo" cols="12" rows="1"></textarea></p>
+            <p> CANTIDAD DE PRODUCTO: <textarea name="cantidad_articulo" id="cantidad_articulo" cols="12" rows="1"></textarea></p>
+            <p> FECHA DE PEDIDO: <input type="date" id="fecha_delPedido"></p>        
         </div>
         <div class="botoneraPedidos">
             <button onclick="buscarArticulo()">Buscar</button>
-            <button onclick="agregarArticulo()">Agregar</button>
+            <button onclick="agregarArticulo()">Guardar</button>
             <button onclick="modificarArticulo()">Modificar</button>
             <button onclick="borrarArticulo()">Eliminar</button>
-
+            <button onclick="limpiarDatos()">Limpiar</button>
         </div>
     </div>
   </body>
