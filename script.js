@@ -15,7 +15,7 @@ async function mostrarDatos() {
             <tr>
                 <td>${fechaPedido.id_producto}</td>
                 <td>${fechaPedido.nombre_producto}</td>
-                <td>${fechaPedido.cantidad_producto}</td>
+                <td>${fechaPedido.cantidad_producto}/u</td>
                 <td>${fechaFormat}</td>
             </tr>`;
             }
