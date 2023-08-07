@@ -9,6 +9,7 @@ function redirect() {
     if(user === userDefault && pass === passDefault) {
         window.location.href = './index.html'
     }   else {
-        alert('Usuario / contraseña incorrectos')
+        let aviso = document.getElementById('aviso')
+            aviso.classList.add('avisoON')
     }
 }

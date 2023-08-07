@@ -32,3 +32,18 @@ body {
     color: #588157;
     margin-top: 10px;
 }
+
+.aviso {
+    display: none;
+}
+
+.avisoON {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin-top: 5%;
+    margin-left: 38%;
+    background-color: red;
+    width: 25%;
+    border-radius: 20px;
+}

@@ -15,7 +15,7 @@ async function mostrarDatos() {
             <tr>
                 <td>${fechaPedido.id_producto}</td>
                 <td>${fechaPedido.nombre_producto}</td>
-                <td>${fechaPedido.cantidad_producto}/u</td>
+                <td>${fechaPedido.cantidad_producto} /u</td>
                 <td>${fechaFormat}</td>
             </tr>`;
             }
@@ -27,6 +27,12 @@ async function mostrarDatos() {
 }
 
 async function buscarArticulo() {
+
+    let id = document.getElementById('id_articulo').value
+    if(id === "") {
+        alert('Campo ID vacío')
+        return;
+    }
 
     try {
         const id = document.getElementById('id_articulo').value
@@ -50,6 +56,12 @@ async function buscarArticulo() {
 }
 
 async function agregarArticulo() {
+
+    let id = document.getElementById('id_articulo').value
+    if(id === "") {
+        alert('Campo ID vacío')
+        return;
+    }
     try {
         let id = document.getElementById('id_articulo').value
         let nombre = document.getElementById('nombre_articulo').value;
