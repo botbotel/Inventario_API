@@ -9,9 +9,10 @@
   <body onload="mostrarDatos()">
     <div class="cabezado">
       <h1>INVENTARIO BARRA</h1>
+      
     </div>
     <div class="seccionPedidos">
-        <h1>INGRESAR PEDIDO</h1>
+        <h1>INGRESAR PEDIDO <img src="./assets/editar.png" id="iconEditar" onclick="aparecerMenuPedido()"></h1>
       <div class="tablaPedidos">
         <table>
             <thead>
@@ -26,7 +27,7 @@
           </table>
       </div>
     </div>
-    <div class="modificarPedido">
+    <div class="modificarPedidoOFF" id="modificarPedidoOFF">
         <div class="textAreas">
             <p>ID: <textarea name="id_articulo" id="id_articulo" cols="5" rows="1"></textarea></p>
             <p>NOMBRE DEL PRODUCTO: <textarea name="nombre_articulo" id="nombre_articulo" cols="12" rows="1"></textarea></p>

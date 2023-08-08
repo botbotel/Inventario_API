@@ -154,6 +154,14 @@ function limpiarDatos() {
     location.reload()
 }
 
+function aparecerMenuPedido() {
+    let editorButtom = document.getElementById('iconEditar')
+    let textareas = document.getElementById('modificarPedidoOFF')
+
+    if(editorButtom) {
+        textareas.classList.add('modificarPedidoON')
+    }
+}
 
 
 
