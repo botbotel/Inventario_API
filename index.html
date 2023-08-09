@@ -16,7 +16,7 @@
           INGRESAR PEDIDO
           <img
             src="./assets/arrow_up.png"
-            id="iconEditar"
+            id="iconEditarPedido"
             onclick="aparecerMenuPedido()"
           />
         </h1>
@@ -39,7 +39,8 @@
           INVENTARIO
           <img
             src="./assets/arrow_up.png"
-            id="iconEditar"
+            id="iconEditarInventario"
+            onclick="aparecerMenuInventario()"
           />
         </h1>
         <div class="tablaInventario">
@@ -57,43 +58,85 @@
       </div>
     </div>
 
-    <div class="modificarPedidoOFF" id="modificarPedidoOFF">
-      <div class="textAreas">
-        <p>
-          ID:
-          <textarea
-            name="id_articulo"
-            id="id_articulo"
-            cols="5"
-            rows="1"
-          ></textarea>
-        </p>
-        <p>
-          NOMBRE DEL PRODUCTO:
-          <textarea
-            name="nombre_articulo"
-            id="nombre_articulo"
-            cols="12"
-            rows="1"
-          ></textarea>
-        </p>
-        <p>
-          CANTIDAD DE PRODUCTO:
-          <textarea
-            name="cantidad_articulo"
-            id="cantidad_articulo"
-            cols="12"
-            rows="1"
-          ></textarea>
-        </p>
-        <p>FECHA DE PEDIDO: <input type="date" id="fecha_delPedido" /></p>
+    
+    <div class="editar">
+      <div class="modificarPedidoOFF" id="modificarPedidoOFF">
+        <div class="textAreas">
+          <p>
+            ID:
+            <textarea
+              name="id_articulo"
+              id="id_articulo"
+              cols="5"
+              rows="1"
+            ></textarea>
+          </p>
+          <p>
+            NOMBRE DEL PRODUCTO:
+            <textarea
+              name="nombre_articulo"
+              id="nombre_articulo"
+              cols="12"
+              rows="1"
+            ></textarea>
+          </p>
+          <p>
+            CANTIDAD DE PRODUCTO:
+            <textarea
+              name="cantidad_articulo"
+              id="cantidad_articulo"
+              cols="12"
+              rows="1"
+            ></textarea>
+          </p>
+          <p>FECHA DE PEDIDO: <input type="date" id="fecha_delPedido" /></p>
+        </div>
+        <div class="botoneraPedidos">
+          <button onclick="buscarArticulo()">Buscar</button>
+          <button onclick="agregarArticulo()">Guardar</button>
+          <button onclick="modificarArticulo()">Modificar</button>
+          <button onclick="borrarArticulo()">Eliminar</button>
+          <button onclick="limpiarDatos()">Limpiar</button>
+        </div>
       </div>
-      <div class="botoneraPedidos">
-        <button onclick="buscarArticulo()">Buscar</button>
-        <button onclick="agregarArticulo()">Guardar</button>
-        <button onclick="modificarArticulo()">Modificar</button>
-        <button onclick="borrarArticulo()">Eliminar</button>
-        <button onclick="limpiarDatos()">Limpiar</button>
+      <div class="modificarInventarioOFF" id="modificarInventarioOFF">
+
+        <div class="textAreas">
+          <p>
+            ID:
+            <textarea
+              name="id_Iarticulo"
+              id="id_Iarticulo"
+              cols="5"
+              rows="1"
+            ></textarea>
+          </p>
+          <p>
+            NOMBRE DEL PRODUCTO:
+            <textarea
+              name="nombre_Iarticulo"
+              id="nombre_Iarticulo"
+              cols="12"
+              rows="1"
+            ></textarea>
+          </p>
+          <p>
+            CANTIDAD DE PRODUCTO:
+            <textarea
+              name="cantidad_Iarticulo"
+              id="cantidad_Iarticulo"
+              cols="12"
+              rows="1"
+            ></textarea>
+          </p>
+        </div>
+        <div class="botoneraPedidos">
+          <button onclick="buscarArticuloInventariro()">Buscar</button>
+          <button onclick="agregarArticuloInventario()">Guardar</button>
+          <button onclick="modificarArticuloInventario()">Modificar</button>
+          <button onclick="borrarArticuloInventario()">Eliminar</button>
+          <button onclick="limpiarDatos()">Limpiar</button>
+        </div>
       </div>
     </div>
   </body>

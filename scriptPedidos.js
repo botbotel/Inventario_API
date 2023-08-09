@@ -141,6 +141,7 @@ async function borrarArticulo() {
         })
             .then(respuesta => respuesta.json())
             .then(data => {
+                alert('Estás seguro de que quieres borrar?')
                 mostrarDatosPedido()
             })
     } catch (error) {
@@ -153,7 +154,7 @@ function limpiarDatos() {
 }
 
 function aparecerMenuPedido() {
-    let editorButtom = document.getElementById('iconEditar')
+    let editorButtom = document.getElementById('iconEditarPedido')
     let textareas = document.getElementById('modificarPedidoOFF')
 
     if(editorButtom) {

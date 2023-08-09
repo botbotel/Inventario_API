@@ -7,6 +7,12 @@ body {
     font-weight: 300;
 }
 
+.editar {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+
 .cabezado {
     display: flex;
     justify-content: center;
@@ -18,13 +24,19 @@ body {
     justify-content: space-between;
 }
 
-/* SECCION TABLA INVENTARIO */
+/* SECCION INVENTARIO */
 .seccionInventario {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-right: 10%;
+    margin-right: 15%;
+}
+
+.seccionInventario img{
+    width: 40px; height: 40px;
+    margin-left: 10px;
+    cursor: pointer;
 }
 
 .tablaInventario {
@@ -42,13 +54,19 @@ body {
     padding: 10px;
 }
 
-/* SECCION TABLA PEDIDOS */
-
-.seccionPedidos img {
-    width: 40px; height: 40px;
-    margin-left: 10px;
-    cursor: pointer;
+.modificarInventarioOFF {
+    display: none;
 }
+
+.modificarInventarioON {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-top: 8px;
+    margin-left: 66.5%;
+}
+
+/* SECCION PEDIDOS */
 
 
 .seccionPedidos {
@@ -57,6 +75,12 @@ body {
     justify-content: center;
     align-items: center;
     margin-left: 6.3%;
+}
+
+.seccionPedidos img{
+    width: 40px; height: 40px;
+    margin-left: 10px;
+    cursor: pointer;
 }
 
 .tablaPedidos {
@@ -81,8 +105,9 @@ body {
 .modificarPedidoON {
     display: flex;
     flex-direction: column;
-    margin-left: 6.5%;
+    position: absolute;
     margin-top: 8px;
+    margin-left: -63.5%;
 }
 
 .textAreas {
