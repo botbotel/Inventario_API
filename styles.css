@@ -13,6 +13,36 @@ body {
     font-size: xx-large;
 }
 
+.seccionTablas {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* SECCION TABLA INVENTARIO */
+.seccionInventario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10%;
+}
+
+.tablaInventario {
+    background-color: #3A5A40;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+.tablaInventario tr{
+    text-align: center;
+}
+
+.tablaInventario th {
+    padding: 10px;
+}
+
+/* SECCION TABLA PEDIDOS */
 
 .seccionPedidos img {
     width: 40px; height: 40px;
@@ -20,13 +50,13 @@ body {
     cursor: pointer;
 }
 
+
 .seccionPedidos {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: -70%;
-    margin-top: 6%;
+    margin-left: 6.3%;
 }
 
 .tablaPedidos {
@@ -98,28 +128,16 @@ body {
     margin: 1rem;
     background-color: #DAD7CD;
     color: #344E41;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
 .botoneraPedidos button:hover {
     transition: 0.7s;
     background-color: #344E41;
     color: #DAD7CD;
-}
-
-.toggle {
-    display: none;
-}
-
-.toggleActivoError {
-    transition: 2s ease-in;
-    background-color: rgb(237, 39, 39);
-    display: flex;
-    position: relative;
-    margin-top: 20%;
-    margin-left: 85%;
-    width: 15%;
-    justify-content: center;
-    border-radius: 10px;
+    box-shadow: #0000003d 0px 3px 8px;
+    cursor: pointer;
     
 }
+
 

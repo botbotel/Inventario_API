@@ -1,4 +1,4 @@
-async function mostrarDatos() {
+async function mostrarDatosPedido() {
     fetch('http://localhost:3000/api/fechas_pedidos/', {
         method: 'GET',
         headers: {
@@ -83,8 +83,7 @@ async function agregarArticulo() {
             .then(respuesta => respuesta.json())
             .then(data => {
                 alert('Añadido correctamente')
-                mostrarDatos()
-                location.reload()
+                mostrarDatosPedido()
             })
     } catch (error) {
         console.log('Se ha producido el siguiente error: ', error)
@@ -121,8 +120,7 @@ async function modificarArticulo() {
             .then(respuesta => respuesta.json())
             .then(data => {
                 alert('Modificado correctamente')
-                mostrarDatos()
-                location.reload()
+                mostrarDatosPedido()
             })
     } catch (error) {
         console.log('Se ha producido el siguiente error: ', error)
@@ -143,7 +141,7 @@ async function borrarArticulo() {
         })
             .then(respuesta => respuesta.json())
             .then(data => {
-                location.reload()
+                mostrarDatosPedido()
             })
     } catch (error) {
         console.log('Se ha producido el siguiente error: ', error)
@@ -160,10 +158,6 @@ function aparecerMenuPedido() {
 
     if(editorButtom) {
         textareas.classList.add('modificarPedidoON')
+        editorButtom.style.rotate = '180deg'
     }
 }
-
-
-
-
-
