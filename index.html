@@ -15,6 +15,7 @@
     <!-- TABLAS -->
     <div class="seccionTablas">
       <div class="tablas">
+        <!-- PEDIDOS -->
         <div class="seccionPedidos">
           <h1>
             INGRESAR PEDIDO
@@ -37,7 +38,48 @@
               <tbody id="cuerpoTabla"></tbody>
             </table>
           </div>
+          <!-- MODIFICADORES -->
+          <div class="modificarPedidoOFF" id="modificarPedidoOFF">
+            <div class="textAreas">
+              <p>
+                ID:
+                <textarea
+                  name="id_articulo"
+                  id="id_articulo"
+                  cols="5"
+                  rows="1"
+                ></textarea>
+              </p>
+              <p>
+                NOMBRE DEL PRODUCTO:
+                <textarea
+                  name="nombre_articulo"
+                  id="nombre_articulo"
+                  cols="12"
+                  rows="1"
+                ></textarea>
+              </p>
+              <p>
+                CANTIDAD DE PRODUCTO:
+                <textarea
+                  name="cantidad_articulo"
+                  id="cantidad_articulo"
+                  cols="12"
+                  rows="1"
+                ></textarea>
+              </p>
+              <p>FECHA DE PEDIDO: <input type="date" id="fecha_delPedido" /></p>
+            </div>
+            <div class="botoneraPedidos">
+              <button onclick="buscarArticuloPedido()">Buscar</button>
+              <button onclick="agregarArticuloPedido()">Guardar</button>
+              <button onclick="modificarArticuloPedido()">Modificar</button>
+              <button onclick="borrarArticuloPedido()">Eliminar</button>
+              <button onclick="limpiarDatos()">Limpiar</button>
+            </div>
+          </div>
         </div>
+        <!-- INVENTARIO -->
         <div class="seccionInventario">
           <h1>
             INVENTARIO
@@ -59,85 +101,44 @@
               <tbody id="cuerpoTablaInventario"></tbody>
             </table>
           </div>
-        </div>
-      </div>
-      <!-- EDITAR -->
-      <div class="editar">
-        <div class="modificarPedidoOFF" id="modificarPedidoOFF">
-          <div class="textAreas">
-            <p>
-              ID:
-              <textarea
-                name="id_articulo"
-                id="id_articulo"
-                cols="5"
-                rows="1"
-              ></textarea>
-            </p>
-            <p>
-              NOMBRE DEL PRODUCTO:
-              <textarea
-                name="nombre_articulo"
-                id="nombre_articulo"
-                cols="12"
-                rows="1"
-              ></textarea>
-            </p>
-            <p>
-              CANTIDAD DE PRODUCTO:
-              <textarea
-                name="cantidad_articulo"
-                id="cantidad_articulo"
-                cols="12"
-                rows="1"
-              ></textarea>
-            </p>
-            <p>FECHA DE PEDIDO: <input type="date" id="fecha_delPedido" /></p>
-          </div>
-          <div class="botoneraPedidos">
-            <button onclick="buscarArticuloPedido()">Buscar</button>
-            <button onclick="agregarArticuloPedido()">Guardar</button>
-            <button onclick="modificarArticuloPedido()">Modificar</button>
-            <button onclick="borrarArticuloPedido()">Eliminar</button>
-            <button onclick="limpiarDatos()">Limpiar</button>
-          </div>
-        </div>
-        <div class="modificarInventarioOFF" id="modificarInventarioOFF">
-          <div class="textAreas">
-            <p>
-              ID:
-              <textarea
-                name="id_Iarticulo"
-                id="id_Iarticulo"
-                cols="5"
-                rows="1"
-              ></textarea>
-            </p>
-            <p>
-              NOMBRE DEL PRODUCTO:
-              <textarea
-                name="nombre_Iarticulo"
-                id="nombre_Iarticulo"
-                cols="12"
-                rows="1"
-              ></textarea>
-            </p>
-            <p>
-              CANTIDAD DE PRODUCTO:
-              <textarea
-                name="cantidad_Iarticulo"
-                id="cantidad_Iarticulo"
-                cols="12"
-                rows="1"
-              ></textarea>
-            </p>
-          </div>
-          <div class="botoneraPedidos">
-            <button onclick="buscarArticuloInventariro()">Buscar</button>
-            <button onclick="agregarArticuloInventario()">Guardar</button>
-            <button onclick="modificarArticuloInventario()">Modificar</button>
-            <button onclick="borrarArticuloInventario()">Eliminar</button>
-            <button onclick="limpiarDatos()">Limpiar</button>
+          <!-- MODIFICADORES -->
+          <div class="modificarInventarioOFF" id="modificarInventarioOFF">
+            <div class="textAreas">
+              <p>
+                ID:
+                <textarea
+                  name="id_Iarticulo"
+                  id="id_Iarticulo"
+                  cols="5"
+                  rows="1"
+                ></textarea>
+              </p>
+              <p>
+                NOMBRE DEL PRODUCTO:
+                <textarea
+                  name="nombre_Iarticulo"
+                  id="nombre_Iarticulo"
+                  cols="12"
+                  rows="1"
+                ></textarea>
+              </p>
+              <p>
+                CANTIDAD DE PRODUCTO:
+                <textarea
+                  name="cantidad_Iarticulo"
+                  id="cantidad_Iarticulo"
+                  cols="12"
+                  rows="1"
+                ></textarea>
+              </p>
+            </div>
+            <div class="botoneraPedidos">
+              <button onclick="buscarArticuloInventariro()">Buscar</button>
+              <button onclick="agregarArticuloInventario()">Guardar</button>
+              <button onclick="modificarArticuloInventario()">Modificar</button>
+              <button onclick="borrarArticuloInventario()">Eliminar</button>
+              <button onclick="limpiarDatos()">Limpiar</button>
+            </div>
           </div>
         </div>
       </div>

@@ -23,7 +23,6 @@ async function mostrarDatosInventario() {
         });
 }
 
-
 async function buscarArticuloInventariro() {
 
     let id = document.getElementById('id_Iarticulo').value
@@ -148,7 +147,7 @@ function aparecerMenuInventario() {
     let editorButtom = document.getElementById('iconEditarInventario')
     let textareas = document.getElementById('modificarInventarioOFF')
 
-    if(editorButtom) {
+    if (editorButtom) {
         textareas.classList.add('modificarInventarioON')
         editorButtom.style.rotate = '180deg'
     }

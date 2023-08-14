@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap");
-@import url("./responsiveTablet.css") screen and (max-width: 900px);
-@import url("./responsiveMobile.css") screen and (max-width: 667px);
+@import url("./Mobile/responsiveTablet.css") screen and (max-width: 900px);
+@import url("./Mobile/responsiveMobile.css") screen and (max-width: 667px);
 
 body {
   background-color: #588157;
@@ -18,16 +18,17 @@ body {
 .tablas {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  position: relative;
+  margin-left: 5%;
 }
 
 /* SECCION INVENTARIO */
 .seccionInventario {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  position: relative;
   align-items: center;
-  margin-right: 15%;
+  margin-right: 5%;
 }
 
 .seccionInventario img {
@@ -62,9 +63,8 @@ body {
 .seccionPedidos {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  position: relative;
   align-items: center;
-  margin-left: 10%;
 }
 
 .seccionPedidos img {
@@ -96,22 +96,27 @@ body {
 
 /* SECCION EDITAR  */
 
-.editar {
+/* .editar {
   display: flex;
   justify-content: space-between;
   margin-top: 4rem;
-}
+} */
 
 .modificarInventarioON {
   display: flex;
   flex-direction: column;
-  margin-right: 4.5%;
+  align-items: center;
+  margin-top: 2.5rem;
+  justify-content: left;
+  
 }
 
 .modificarPedidoON {
   display: flex;
   flex-direction: column;
-  margin-left: 10.5%;
+  margin-top: 2.5rem;
+  justify-content: left;
+  align-items: center;
 }
 
 .textAreas {
@@ -150,7 +155,8 @@ body {
 }
 
 .botoneraPedidos {
-  margin-left: 0%;
+  display: flex;
+  flex-direction: row;
 }
 
 .botoneraPedidos button {

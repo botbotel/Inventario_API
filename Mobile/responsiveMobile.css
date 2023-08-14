@@ -1,0 +1,21 @@
+body {
+  margin: 0%;
+  padding: 0%;
+}
+
+.cabezado {
+  margin: 0%;
+  text-align: center;
+}
+
+.tablas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.seccionInventarioON {
+  display: flex;
+  align-items: center;
+}
+

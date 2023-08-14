@@ -16,14 +16,7 @@
 }
 
 .seccionInventario {
-  margin-left: 21.3%;
-}
-
-.editar {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  margin-right: 45%;
 }
 
 .modificarPedidoON {
@@ -36,7 +29,7 @@
 .modificarInventarioON {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: center;
   margin-left: 15%;
   margin-top: 2rem;
 }
