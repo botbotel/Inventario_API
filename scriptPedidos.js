@@ -26,7 +26,7 @@ async function mostrarDatosPedido() {
         });
 }
 
-async function buscarArticulo() {
+async function buscarArticuloPedido() {
 
     let id = document.getElementById('id_articulo').value
     if(id === "") {
@@ -55,7 +55,7 @@ async function buscarArticulo() {
     }
 }
 
-async function agregarArticulo() {
+async function agregarArticuloPedido() {
 
     let id = document.getElementById('id_articulo').value
     if(id === "") {
@@ -90,7 +90,7 @@ async function agregarArticulo() {
     }
 }
 
-async function modificarArticulo() {
+async function modificarArticuloPedido() {
 
     let id = document.getElementById('id_articulo').value
 
@@ -127,7 +127,7 @@ async function modificarArticulo() {
     }
 }
 
-async function borrarArticulo() {
+async function borrarArticuloPedido() {
     let id = document.getElementById('id_articulo').value
 
     if (id === "") {

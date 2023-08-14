@@ -1,0 +1,34 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.cabezado h1 {
+  align-items: center;
+  justify-self: center;
+}
+
+.tablas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.seccionInventario {
+  display: flex;
+  flex-direction: column;
+}
+
+.seccionPedidos {
+  display: flex;
+  flex-direction: column;
+}
+
+.editar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10%;
+}

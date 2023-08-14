@@ -1,168 +1,172 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap");
+@import url("./responsiveTablet.css") screen and (max-width: 900px);
+@import url("./responsiveMobile.css") screen and (max-width: 667px);
 
 body {
-    background-color: #588157;
-    color: #DAD7CD;
-    font-family: 'Oswald', sans-serif;
-    font-weight: 300;
-}
-
-.editar {
-    display: flex;
-    justify-content: space-around;
-    position: relative;
+  background-color: #588157;
+  color: #dad7cd;
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
 }
 
 .cabezado {
-    display: flex;
-    justify-content: center;
-    font-size: xx-large;
+  display: flex;
+  justify-content: center;
+  font-size: xx-large;
 }
 
-.seccionTablas {
-    display: flex;
-    justify-content: space-between;
+.tablas {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* SECCION INVENTARIO */
 .seccionInventario {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-right: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15%;
 }
 
-.seccionInventario img{
-    width: 40px; height: 40px;
-    margin-left: 10px;
-    cursor: pointer;
+.seccionInventario img {
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+  cursor: pointer;
 }
 
 .tablaInventario {
-    background-color: #3A5A40;
-    display: flex;
-    justify-content: center;
-    padding: 50px;
+  background-color: #3a5a40;
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
-.tablaInventario tr{
-    text-align: center;
+.tablaInventario tr {
+  text-align: center;
 }
 
 .tablaInventario th {
-    padding: 10px;
+  padding: 10px;
 }
 
 .modificarInventarioOFF {
-    display: none;
-}
-
-.modificarInventarioON {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    margin-top: 8px;
-    margin-left: 66.5%;
+  display: none;
 }
 
 /* SECCION PEDIDOS */
 
-
 .seccionPedidos {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-left: 6.3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10%;
 }
 
-.seccionPedidos img{
-    width: 40px; height: 40px;
-    margin-left: 10px;
-    cursor: pointer;
+.seccionPedidos img {
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+  cursor: pointer;
 }
 
 .tablaPedidos {
-    background-color: #3A5A40;
-    display: flex;
-    justify-content: center;
-    padding: 50px;
+  background-color: #3a5a40;
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
-.tablaPedidos tr{
-    text-align: center;
+.tablaPedidos tr {
+  text-align: center;
 }
 
 .tablaPedidos th {
-    padding: 10px;
+  padding: 10px;
 }
 
 .modificarPedidoOFF {
-    display: none;
+  display: none;
+}
+
+/* SECCION EDITAR  */
+
+.editar {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4rem;
+}
+
+.modificarInventarioON {
+  display: flex;
+  flex-direction: column;
+  margin-right: 4.5%;
 }
 
 .modificarPedidoON {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    margin-top: 8px;
-    margin-left: -63.5%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10.5%;
 }
 
 .textAreas {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .textAreas p {
-    display: flex;
+  display: flex;
 }
 
-.textAreas p textarea{
-    margin-left: 10px;
-    font-family: 'Oswald', sans-serif;
+.textAreas p textarea {
+  margin-left: 10px;
+  font-family: "Oswald", sans-serif;
 }
 
-.textAreas p input{
-    margin-left: 10px;
-    font-family: 'Oswald', sans-serif;
+.textAreas p input {
+  margin-left: 10px;
+  font-family: "Oswald", sans-serif;
 }
 
 .textAreas textarea {
-    text-align: center;
-    resize: none;
+  text-align: center;
+  resize: none;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 
 .botonClear button {
-    border: none;
-    padding: 8px;
-    margin: 1rem;
-    background-color: #DAD7CD;
-    color: #344E41;
+  border: none;
+  padding: 8px;
+  margin: 1rem;
+  background-color: #dad7cd;
+  color: #344e41;
 }
 
 .botoneraPedidos {
-    margin-left: 0%;
+  margin-left: 0%;
 }
 
-.botoneraPedidos button{
-    border: none;
-    padding: 8px;
-    margin: 1rem;
-    background-color: #DAD7CD;
-    color: #344E41;
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+.botoneraPedidos button {
+  border: none;
+  padding: 8px;
+  margin: 1rem;
+  background-color: #dad7cd;
+  color: #344e41;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
 .botoneraPedidos button:hover {
-    transition: 0.7s;
-    background-color: #344E41;
-    color: #DAD7CD;
-    box-shadow: #0000003d 0px 3px 8px;
-    cursor: pointer;
-    
+  transition: 0.7s;
+  background-color: #344e41;
+  color: #dad7cd;
+  box-shadow: #0000003d 0px 3px 8px;
+  cursor: pointer;
 }
-
-
