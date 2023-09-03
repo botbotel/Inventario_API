@@ -29,7 +29,7 @@ async function mostrarDatosPedido() {
 async function buscarArticuloPedido() {
 
     let id = document.getElementById('id_articulo').value
-    if(id === "") {
+    if (id === "") {
         alert('Campo ID vacío')
         return;
     }
@@ -58,7 +58,7 @@ async function buscarArticuloPedido() {
 async function agregarArticuloPedido() {
 
     let id = document.getElementById('id_articulo').value
-    if(id === "") {
+    if (id === "") {
         alert('Campo ID vacío')
         return;
     }
@@ -157,8 +157,20 @@ function aparecerMenuPedido() {
     let editorButtom = document.getElementById('iconEditarPedido')
     let textareas = document.getElementById('modificarPedidoOFF')
 
-    if(editorButtom) {
+    if (editorButtom) {
         textareas.classList.add('modificarPedidoON')
         editorButtom.style.rotate = '180deg'
+    }
+}
+
+function cargarPedido() {
+    let cantidadPedido = document.getElementById("cantidad_articulo")
+    let cantidadInventario = document.getElementById("cantidad_Iarticulo")
+
+    if (cantidadPedido.value === "" || cantidadInventario.value === "") {
+        alert("Campos cantidad vacíos, revisalos y vuelve a intentarlo")
+    } else {
+        let cuenta = parseInt(cantidadPedido.value) + parseInt(cantidadInventario.value)
+        cantidadInventario.value = cuenta
     }
 }

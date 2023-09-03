@@ -33,3 +33,11 @@
   margin-left: 15%;
   margin-top: 2rem;
 }
+
+.flechaCarga img{
+  position: relative;
+  top: 55%;
+  cursor: pointer;
+  transform: rotate(90deg);
+  margin: 3rem;
+}

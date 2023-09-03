@@ -94,6 +94,14 @@ body {
   display: none;
 }
 
+/* FLECHA CARGA */
+
+.flechaCarga img{
+  position: relative;
+  top: 55%;
+  cursor: pointer;
+}
+
 /* SECCION EDITAR  */
 
 /* .editar {
@@ -176,3 +184,5 @@ body {
   box-shadow: #0000003d 0px 3px 8px;
   cursor: pointer;
 }
+
+
